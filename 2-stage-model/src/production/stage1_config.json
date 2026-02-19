@@ -1,0 +1,27 @@
+{
+  "stage": 1,
+  "status": "LOCKED",
+  "threshold": 0.15,
+  "reason": "Sweet spot for demo - recall 97.7%, FN=13/570, lets 103/642 non-batteries through (not everything is battery)",
+  "timestamp_set": "2026-02-10 14:30:00",
+  "validation_metrics": {
+    "recall": 0.977,
+    "precision": 0.508,
+    "fn": 13,
+    "fp": 539,
+    "tn": 103,
+    "total_batteries": 570
+  },
+  "per_source_validation": {
+    "battery_recybat": {"recall": 1.0, "fn": 0, "total": 399},
+    "battery_singapore": {"recall": 0.980, "fn": 1, "total": 49},
+    "battery_original": {"recall": 0.975, "fn": 3, "total": 122}
+  },
+  "notes": [
+    "LOCKED: Do not modify after this point",
+    "This threshold is used for final test evaluation (run once only)",
+    "Model: stage1_battery_detector_honest_20260208_210134.keras",
+    "Validation AUC: 0.8374 (excellent separation)",
+    "Ready for final test eval: python src/evaluate_stage1_test_honest.py"
+  ]
+}

@@ -1,0 +1,32 @@
+# Reference/archived projects (don't push)
+Joao_Reference/
+smartbin-cv/
+
+# Data directories (regenerable from sources - too large for git)
+Original_dataset/
+RecyclableHouseholdWaste/
+Singapore_Battery_Dataset/
+recybat24/
+
+# Generated data splits (regenerable via script)
+2-stage-model/data/proper_splits/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

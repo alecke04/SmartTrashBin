@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data directories (large image datasets - regenerable from sources)
+data/
+data_archive/
+
+# Temporary output directories (folder included, but outputs excluded)
+logs/
+logs_archive/
+results/*.png
+results/*.json
+
+# Temporary demo outputs (if any)
+demo_predictions/
+test_outputs/
+
+# Old model checkpoints (keep final models in runs/)
+checkpoint*/
+lightning_logs/
+wandb/
+*.h5
+*.pth
+*.pt
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitkeep
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.log
+*~
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Large binary files (if using Git LFS, configure separately)
+*.tar.gz
+*.zip
