@@ -359,7 +359,7 @@ This will:
 ## 5. How Data Is Split
 
 ### Split Strategy
-- **Train/Val/Test:** 67.6% / 14.5% / 14.5% (stratified by class)
+- **Train/Val/Test:** 70% / 15% / 15% (stratified by class)
 - **No data leakage:** Each image appears in exactly one split
 - **Collision-safe naming:** MD5-based filenames prevent duplicates
 
