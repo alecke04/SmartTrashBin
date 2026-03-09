@@ -547,6 +547,8 @@ SmartTrashBin/
 ├── README.md (COMPLETE 10-section documentation)
 ├── .gitignore (excludes data, logs, old models)
 ├── .gitattributes
+├── documentation/ (project docs)
+├── archived/ (old datasets, reference code - not needed for current work)
 │
 └── 2-stage-model/
     ├── config.py (global settings, thresholds locked in JSON)
@@ -559,6 +561,7 @@ SmartTrashBin/
     └── src/
         ├── production/
         │   ├── inference_2stage.py
+        │   ├── convert_to_tflite.py (model conversion for deployment)
         │   ├── stage1_config.json (threshold 0.15 LOCKED)
         │   └── stage2_config.json (threshold 0.07 LOCKED)
         │
@@ -569,7 +572,9 @@ SmartTrashBin/
         ├── validation/
         │   ├── demo_stage1_predictions.py 
         │   ├── demo_stage2_predictions.py 
-        │   ├── test_full_pipeline.py 
+        │   ├── test_full_pipeline.py
+        │   ├── test_full_pipeline_compare.py
+        │   ├── test_manual_images.py
         │   ├── evaluate_stage1_threshold_tuning.py 
         │   ├── evaluate_stage1_test_honest.py 
         │   ├── evaluate_stage2_threshold_tuning.py 

@@ -1,4 +1,4 @@
-﻿"""
+"""
 Stage 2: Threshold Tuning + Per-Source Analysis
 
 Run on validation set to find optimal threshold for recyclable classification.
@@ -267,10 +267,10 @@ def main():
     with open(config_file, 'w') as f:
         json.dump(config, f, indent=2)
     
-    print(f"\n[OK] Results saved: {results_file.name}")
-    print(f"[OK] Config locked: {config_file.name}")
+    print(f"\nResults saved: {results_file.name}")
+    print(f"Config locked: {config_file.name}")
     
-    print("\n[OK] THRESHOLD LOCKED")
+    print("\nTHRESHOLD LOCKED")
     print(f"Use threshold={best_threshold:.2f} in production inference")
     print(f"Model: {model_path.name}")
     print("\nNext: python src/evaluate_stage2_test_honest.py")
@@ -278,4 +278,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

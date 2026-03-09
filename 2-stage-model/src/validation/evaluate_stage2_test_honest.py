@@ -106,7 +106,7 @@ def main():
     print("="*70)
     print("STAGE 2: FINAL TEST EVALUATION (LOCKED TEST SET)")
     print("="*70)
-    print("\n⚠️  WARNING: This runs ONCE per threshold.")
+    print("\nWARNING: This runs ONCE per threshold.")
     print("Do NOT use this to tune anything.")
     print("Do NOT run multiple times.\n")
     
@@ -246,7 +246,7 @@ def main():
     with open(results_file, 'w') as f:
         json.dump(output, f, indent=2)
     
-    print(f"\n✓ Results saved: {results_file.name}")
+    print(f"\nResults saved: {results_file.name}")
     
     # Summary for reporting
     print("\n" + "="*70)
@@ -269,7 +269,7 @@ def main():
             total = tn_src + fp_src
             print(f"  {source:25s}: {int(tn_src)}/{int(total)} correct")
     
-    print("\n✅ DONE: Test set evaluation complete.")
+    print("\nDONE: Test set evaluation complete.")
     print("This is your final honest metric. Do not retrain based on this.")
 
 if __name__ == "__main__":
