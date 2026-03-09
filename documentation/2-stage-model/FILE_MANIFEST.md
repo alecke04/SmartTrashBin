@@ -4,7 +4,7 @@ This document maps which files handle different aspects of the pipeline.
 
 ## Core Data Handling
 
-### 🔧 Creating/Rebuilding Splits
+### Creating/Rebuilding Splits
 **File:** `2-stage-model/recreate_proper_splits.py`
 
 **Purpose:** 
@@ -45,7 +45,7 @@ python 2-stage-model/recreate_proper_splits.py
 
 ## Stage 1: Battery Detection
 
-### 📋 Configuration
+### Configuration
 **File:** `2-stage-model/src/stage1_config.json`
 
 **Contains:**
@@ -58,7 +58,7 @@ python 2-stage-model/recreate_proper_splits.py
 - Battery detection cutoff (P(battery) >= threshold → BATTERY)
 - Used by all Stage 1 evaluation scripts
 
-### 🧠 Training
+### Training
 **File:** `2-stage-model/src/train_stage1_honest.py`
 
 **What it does:**
@@ -81,7 +81,7 @@ python 2-stage-model/recreate_proper_splits.py
 python 2-stage-model/src/train_stage1_honest.py
 ```
 
-### 🎯 Threshold Tuning
+### Threshold Tuning
 **File:** `2-stage-model/src/evaluate_stage1_threshold_tuning.py`
 
 **What it does:**
@@ -96,7 +96,7 @@ python 2-stage-model/src/train_stage1_honest.py
 python 2-stage-model/src/evaluate_stage1_threshold_tuning.py
 ```
 
-### ✅ Test Evaluation (ONCE ONLY)
+### Test Evaluation (ONCE ONLY)
 **File:** `2-stage-model/src/evaluate_stage1_test_honest.py`
 
 **What it does:**
@@ -116,7 +116,7 @@ python 2-stage-model/src/evaluate_stage1_test_honest.py
 
 ## Stage 2: Waste Classification (Recyclable vs Trash)
 
-### 📋 Configuration
+### Configuration
 **File:** `2-stage-model/src/stage2_config.json`
 
 **Contains:**
@@ -128,7 +128,7 @@ python 2-stage-model/src/evaluate_stage1_test_honest.py
 - Recyclable detection cutoff (P(recyclable) >= threshold → RECYCLABLE)
 - Used by all Stage 2 evaluation scripts
 
-### 🧠 Training
+### Training
 **File:** `2-stage-model/src/train_stage2_honest.py`
 
 **What it does:**
@@ -150,7 +150,7 @@ python 2-stage-model/src/evaluate_stage1_test_honest.py
 python 2-stage-model/src/train_stage2_honest.py
 ```
 
-### 🎯 Threshold Tuning
+### Threshold Tuning
 **File:** `2-stage-model/src/evaluate_stage2_threshold_tuning.py`
 
 **What it does:**
@@ -165,7 +165,7 @@ python 2-stage-model/src/train_stage2_honest.py
 python 2-stage-model/src/evaluate_stage2_threshold_tuning.py
 ```
 
-### ✅ Test Evaluation (ONCE ONLY)
+### Test Evaluation (ONCE ONLY)
 **File:** `2-stage-model/src/evaluate_stage2_test_honest.py`
 
 **What it does:**
@@ -185,7 +185,7 @@ python 2-stage-model/src/evaluate_stage2_test_honest.py
 
 ## Inference Pipeline
 
-### 🚀 Live Predictions
+### Live Predictions
 **File:** `2-stage-model/src/inference_2stage.py`
 
 **What it does:**
@@ -201,7 +201,7 @@ python 2-stage-model/src/evaluate_stage2_test_honest.py
 
 ## Central Configuration
 
-### ⚙️ Main Config
+### Main Config
 **File:** `2-stage-model/config.py`
 
 **Contains:**
